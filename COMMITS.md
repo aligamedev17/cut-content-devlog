@@ -2,7 +2,7 @@
 
 Every commit of the (private) project repository, in order: local time (Tashkent, UTC+5) and what was done.
 The jam ran from 12 November 05:00 to 16 November 01:59 UTC. Commits before it are tool setup only (declared in the
-submission). 91 commits.
+submission). 92 commits.
 
 
 ## 2026-11-11
@@ -107,3 +107,7 @@ submission). 91 commits.
 - `05:49` Effects and our own animations always cook; the build's self-test checks them (build Day5b)
 - `12:08` Scenes 19 to 22, a filmed playthrough and its fixes, screen tests for the guards
 - `12:16` Build Day6a: twenty-three scenes, self-test clean at 59 to 74 fps; trailer card and dev log
+
+## 2026-11-15
+
+- `03:03` Build Day7a: the last night's polish, scene selection for a fresh install, the making-of film
