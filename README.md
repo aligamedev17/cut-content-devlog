@@ -428,15 +428,42 @@ The director watched that run and said: "He walks straight past the guards and n
 bot tests doors, routes and timings, and for that test the guards are told not to see it (their eyes have a screen
 test of their own). The film says so on screen, and the line about the guard is cut over his screen test instead.
 
+### What a judge's machine can show
+
+The slowest place in the film is the museum's own gallery, and it is the first real scene. On the build machine it
+runs at 47 frames a second; on a judge's laptop it could be a slide show, and the setting that fixes it sits on the
+pause card where nobody looks first. So on a first launch the game now watches itself: three seconds of frames behind
+the title card (which turns round the vault, about as heavy as the film gets), and if the middle one is under 45 a
+second the picture goes one step down and is looked at again.
+
+The first version of that rule had a hole, and the test for it found a second one. A display that caps the frame
+rate at 30 would have been handed the worst picture for nothing, so a step that buys no speed is taken back. Then the
+test fed it "30, then 43, then 43" and it went all the way back to the heaviest setting instead of one step: it goes
+back to the last step that helped now. It is tested in the editor by capping the frame rate
+(`tools/test_probe.py`); it has not yet met a real slow machine.
+
+### The monster, second casting
+
+The rubber dinosaur was cylinders and boxes, and the masks beside it were cubes on sticks. `tools/blender/make_creature.py`
+grows them the way a rubber toy is made: round masses along the spine, the tail and the snout, melted into one skin
+(a voxel remesh), smoothed and thinned out. The neck and the jaw hinge are exactly where they were, so the code that
+turns the head and works the jaw never noticed.
+
+| Before | After |
+|---|---|
+| ![The first monster](shots/beauty_creature.png) | ![The second casting](shots/creature_after.jpg) |
+
 ### The print
 
-Build Day7a went out of the editor at three in the morning of the last day.
+Build Day7b went out of the editor at half past four in the morning of the last day (Day7a, an hour and a half
+earlier, was the first print of the night).
 
-- Twenty bot playtests green on the final level, among them the one that walks all twenty-three scenes.
+- Twenty-one bot playtests green on the final level, among them the one that walks all twenty-three scenes.
 - The packaged game's own self-test: 0 fails. It now also checks that all twenty-two scene saves for the scene
-  selection are inside the package, and visits every scene: 43 to 91 frames a second on the build machine, the
-  slowest being the museum's own gallery (43), the vault (50) and the archive (54). No frame longer than 30 ms.
-- What the last night cost: the old build and the new one ran their self-tests back to back, once each. The gallery
+  selection are inside the package, and visits every scene: 47 to 98 frames a second on the build machine, the
+  slowest being the museum's own gallery (47), the vault (55) and the archive (57). No frame longer than 25 ms.
+- What the last night cost (measured on Day7a): the old build and the new one ran their self-tests back to back,
+  once each. The gallery
   came out the same (61.6 and 61.7 frames a second), the archive and the alley 2 percent slower, the sound stage 8
   percent and the backlot street 12 percent slower (83 to 73). One run each: a measurement, not a law.
 - Not yet done when this was written: a human playing this build from start to finish.

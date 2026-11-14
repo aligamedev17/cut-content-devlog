@@ -2,7 +2,7 @@
 
 Every commit of the (private) project repository, in order: local time (Tashkent, UTC+5) and what was done.
 The jam ran from 12 November 05:00 to 16 November 01:59 UTC. Commits before it are tool setup only (declared in the
-submission). 92 commits.
+submission). 97 commits.
 
 
 ## 2026-11-11
@@ -111,3 +111,8 @@ submission). 92 commits.
 ## 2026-11-15
 
 - `03:03` Build Day7a: the last night's polish, scene selection for a fresh install, the making-of film
+- `03:12` Docs: the itch dev log post and the submission checklist kept with the sources
+- `03:22` Handoff notes: where the project stands, what is in flight, what to do next
+- `03:34` The picture chooses itself on a first launch; a readable objective line; scene selection named first
+- `03:41` The creature shop's monster and its masks, second casting
+- `03:42` Handoff notes: the probe and the creature are in, Day7b is on its way
