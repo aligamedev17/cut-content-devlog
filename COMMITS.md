@@ -2,7 +2,7 @@
 
 Every commit of the (private) project repository, in order: local time (Tashkent, UTC+5) and what was done.
 The jam ran from 12 November 05:00 to 16 November 01:59 UTC. Commits before it are tool setup only (declared in the
-submission). 97 commits.
+submission). 102 commits.
 
 
 ## 2026-11-11
@@ -116,3 +116,8 @@ submission). 97 commits.
 - `03:34` The picture chooses itself on a first launch; a readable objective line; scene selection named first
 - `03:41` The creature shop's monster and its masks, second casting
 - `03:42` Handoff notes: the probe and the creature are in, Day7b is on its way
+- `04:38` Build Day7b: all 21 playtests green, self-test clean; dev log and checklist for it
+- `04:57` Handoff notes: the other-storey sleep rule is in flight
+- `05:01` Guards on another storey sleep: the museum was slow because of people nobody could see
+- `05:01` Handoff notes: Day7c is on its way
+- `05:44` Build Day7c: all 21 playtests green, self-test clean; the sleep rule's real result written down

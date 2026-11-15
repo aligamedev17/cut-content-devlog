@@ -455,17 +455,25 @@ turns the head and works the jaw never noticed.
 
 ### The print
 
-Build Day7b went out of the editor at half past four in the morning of the last day (Day7a, an hour and a half
-earlier, was the first print of the night).
+Build Day7c went out of the editor at twenty to six in the morning of the last day, the third print of the night
+(Day7a at three, Day7b at half past four).
 
 - Twenty-one bot playtests green on the final level, among them the one that walks all twenty-three scenes.
 - The packaged game's own self-test: 0 fails. It now also checks that all twenty-two scene saves for the scene
-  selection are inside the package, and visits every scene: 47 to 98 frames a second on the build machine, the
-  slowest being the museum's own gallery (47), the vault (55) and the archive (57). No frame longer than 25 ms.
+  selection are inside the package, and visits every scene: 46 to 95 frames a second on the build machine, the
+  slowest being the museum's own gallery (46), the vault (53) and the archive (53). No frame longer than 32 ms.
 - What the last night cost (measured on Day7a): the old build and the new one ran their self-tests back to back,
   once each. The gallery
   came out the same (61.6 and 61.7 frames a second), the archive and the alley 2 percent slower, the sound stage 8
   percent and the backlot street 12 percent slower (83 to 73). One run each: a measurement, not a law.
+- The people nobody could see. The museum is the slowest place in the film, and a profile of the gallery showed
+  eight characters being animated where two are in sight: the archive lies under the gallery and the sound stage
+  under that, and their guards stood awake under the thief's feet (the rule that puts far guards to sleep wanted
+  23 metres and a wall built of the lot's own boxes; the museum's floor is neither). A guard on another storey
+  with the building between him and the camera sleeps now. In the editor the gallery's frame went from 24.3 to
+  22.0 ms. In the packaged game it bought nothing we could measure (the gallery 46 and 54 frames a second against
+  47 and 54): there the picture sets the pace, not the people. It stays in, because it is right, but it is not
+  the speed-up it looked like.
 - Not yet done when this was written: a human playing this build from start to finish.
 
 ## The blooper reel (things that went wrong)
