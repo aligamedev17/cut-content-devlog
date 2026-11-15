@@ -476,8 +476,93 @@ Build Day7c went out of the editor at twenty to six in the morning of the last d
   the speed-up it looked like.
 - Not yet done when this was written: a human playing this build from start to finish.
 
+### The first audience
+
+A human played Day7c at one in the afternoon of the last day. Twenty-one bot playtests had passed it. He came
+back with three notes in ten minutes, and no bot could have written any of them.
+
+- "On E he raises his hand everywhere, where it is needed and where it is not." The hand from the flip book
+  above. On the contact sheet it read as a reach. In the game the thief read a whiteboard and waved at it. The
+  bots pressed E four hundred times and never asked why. Cut after one night, see the cutting room floor.
+- "No mouse in the pause menu. How do I change the sensitivity?" The pause card was worked by keys, named in a
+  sentence in the middle of the screen. The bots drive it by console command and found it perfectly usable.
+  The pointer comes out now while the card is up, and only then; mouse speed and sound are sliders, the picture
+  is three buttons, RESUME, NEW TAKE and QUIT are buttons (QUIT asks once more). The keys still work and each
+  is named next to its control.
+- "The menu text is all stuck together." It was: four centred lines of controls and three of settings. The card
+  has sections now (settings, controls, the deleted scenes restored so far with what each one does), and the
+  title card's controls and scene selection stand in columns and lines of their own.
+
+| Before | After |
+|---|---|
+| ![the pause card, before](shots/pause_before.jpg) | ![the pause card, after](shots/pause_after.jpg) |
+| ![the title card, before](shots/title_before.jpg) | ![the title card, after](shots/title_after.jpg) |
+
+How it is checked without touching the mouse (the machine's owner is using it): the test asks the interface
+what lies under the middle of each of the card's twelve controls, then works each control the way a click does.
+Whether the pointer really comes out and goes back in is the one thing only a hand on a mouse can say.
+
+### The second set of notes
+
+He played the rest that afternoon and sent five more notes and two screenshots.
+
+- **"The sign is upside down."** The wet floor sign in the first room: its two boards leaned apart at the top, a V with
+  the hinge cap floating between them. It had stood like that since it was modelled, in the first room of the game,
+  in the stills that room was reviewed by. They were looked at for the lighting. The boards lean together now.
+- **"Some props are in the floor."** His picture showed the cutting room's whiteboard, half of it under the floor: a
+  board whose origin is its middle had been placed at height zero. One was unlikely to be the only one, so a script
+  now asks every mesh in the level where its lowest point is against the floor under it (`dress_probe_sunk.py`,
+  1662 meshes). It found one more of the same family: an awning meant to hang at 2.85 m, lying in the floor of the
+  weather stage.
+- **"The first mark for J, where the door closes: it is not clear this is the place to use it."** The cage that
+  locks behind you is where the jump cut is taught. The director said so in a line and the objective said so in a
+  sentence; nothing in the room did. There is a mark taped on the floor outside the gate now, the objective marker
+  stands on it and names the key until the player's own mark is down, and only then points at the keycard.
+- **"Scene 10: no idea how anything works, nothing can be heard."** The foley stage: a mixing desk plays footsteps
+  through a speaker at the far end and a guard walks over to listen. The speaker used the same falloff as every
+  small sound in the game, 24 metres, and the desk is 25 metres from it. The player pressed the fader and nothing
+  happened that he could hear or see. The speaker is now heard across the stage, the marker leads to the desk first,
+  and once a speaker plays the objective says so and counts the seconds down (35 now, it was 25). The pits say
+  whether they are loud. The bot had passed this scene every time: it does not listen.
+- **"The end needs a cutscene. Confetti and a camera going up is not much."** See below.
+
+| What he sent | After |
+|---|---|
+| ![the sign, as found](shots/note_sign_before.jpg) | ![the sign](shots/note_sign_after.jpg) |
+| ![the board, as found](shots/note_board_before.jpg) | ![the board](shots/note_board_after.jpg) |
+
+![the mark outside the cage](shots/note_mark.jpg)
+
+### The premiere
+
+The film used to end where the heist ends: the van, a burst of confetti, the camera rising for six seconds, the end
+card. The last scene now goes on. The wrap is called in the alley, the picture cuts to black (the clapper, the way the
+film cuts everywhere else), a card reads THE PREMIERE, and the picture comes up in the Picture Palace from scene 9:
+the title on the screen, the thief standing at the back of the aisle, and every seat taken by one of his cardboard
+stunt doubles, seen from behind. The producer does not remember selling a single ticket.
+
+Nothing in it is new art. The hall is scene 9's. The audience is the stunt double's standee, 123 of them spawned
+behind the black; they stand, because cardboard cannot sit, which is the last line of the film. The screen is the
+title card drawn as a slide. The applause is two hundred pairs of synthesized hands. The four lines were voiced the
+way all the others were and checked by speech recognition. ENTER skips it.
+
+![the card](shots/premiere_card.jpg)
+![the premiere](shots/premiere_1.jpg)
+![the premiere, later](shots/premiere_2.jpg)
+
+Build Day7d, the fourth print, went out at 15:25 with all eight notes in it. Its self-test: 0 fails, 44 to 88 frames a
+second. What stands behind it is thinner than behind Day7c, and that was a choice: the man waiting for it asked for
+the build, not for the long playtest. Nine bot playtests ran on this code and passed; the other twelve and the walk
+through all twenty-three scenes did not run. The check that matters now is the one he is about to do himself.
+
 ## The blooper reel (things that went wrong)
 
+- **The wet floor sign stood upside down from the day it was modelled.** In the first room of the game. Found by the
+  first human who walked past it.
+- **A test was overwritten by a test.** The new check of the last scene was saved as `test_finale.py`. There already
+  was a `test_finale.py`: the getaway's last move. Restored from git ten minutes later; the new one is
+  `test_premiere.py`.
+- **The mark for the cage was first taped to the floor of the museum.** The archive is nine metres under it.
 - **The camera flew through the ceiling.** The somersault spun the whole character, and the camera was attached to
   him. Now only his body turns.
 - **Guards walked into walls and stood there, forever.** Patrol routes are written in the guard's own frame; a guard
@@ -549,6 +634,7 @@ Build Day7c went out of the editor at twenty to six in the morning of the last d
 | Mannequin disguise | Became the cowboy costume on the backlot |
 | A runtime AI director that improvises lines | Needs keys in the build; the voices are pre-generated |
 | DOUBLE JUMP | No keys left on the keyboard. It is in the game as a deleted scene that cannot be restored |
+| A hand that goes out on every use | Lasted one night. The first person to play asked why the thief waves at whiteboards |
 
 > **DIRECTOR:** And... CUT! That is a wrap, everyone!
 > **PRODUCER:** I am never working with you again.

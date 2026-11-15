@@ -2,7 +2,7 @@
 
 Every commit of the (private) project repository, in order: local time (Tashkent, UTC+5) and what was done.
 The jam ran from 12 November 05:00 to 16 November 01:59 UTC. Commits before it are tool setup only (declared in the
-submission). 102 commits.
+submission). 105 commits.
 
 
 ## 2026-11-11
@@ -121,3 +121,6 @@ submission). 102 commits.
 - `05:01` Guards on another storey sleep: the museum was slow because of people nobody could see
 - `05:01` Handoff notes: Day7c is on its way
 - `05:44` Build Day7c: all 21 playtests green, self-test clean; the sleep rule's real result written down
+- `14:06` First human playthrough, three notes: the hand is cut, the pause card takes the mouse, menus laid out
+- `15:01` The first whole playthrough by a person: five more notes, and a last scene (the premiere)
+- `15:14` The build's self-test asks for the last scene's assets; handoff: the long playtest was stopped at the director's word
