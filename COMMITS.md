@@ -2,7 +2,7 @@
 
 Every commit of the (private) project repository, in order: local time (Tashkent, UTC+5) and what was done.
 The jam ran from 12 November 05:00 to 16 November 01:59 UTC. Commits before it are tool setup only (declared in the
-submission). 107 commits.
+submission). 113 commits.
 
 
 ## 2026-11-11
@@ -126,3 +126,9 @@ submission). 107 commits.
 - `15:14` The build's self-test asks for the last scene's assets; handoff: the long playtest was stopped at the director's word
 - `15:26` Build Day7d: the eight notes of the first human playthrough, self-test clean; what was and was not run written down
 - `16:37` Second human playthrough: lessons are never dropped, the flat goes away from its pusher, cards are cards; submission steps
+- `16:47` Build Day7e: all eleven notes of the human playthroughs, self-test clean
+- `16:57` The itch page in the game's style: banner, background, theme colours, a screenplay opening, five fresh GIFs
+- `17:39` The gameplay trailer, cut from a person's own recording of the whole game (tools/trailer3_edit.py); submission steps
+- `17:49` The trailer's sound, second version: the game's own commentary lines, its effects, quiet ducked music
+- `17:53` The trailer's sound, third version: the recording's own sound is off, every effect is placed
+- `18:04` The trailer, fourth cut: twelve shots instead of twenty, one line to a shot and a beat after it

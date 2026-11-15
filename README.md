@@ -11,9 +11,11 @@ nearly as well as it claims.*
 
 **The work, commit by commit:** [COMMITS.md](COMMITS.md)   ·   **What is not ours:** [SOURCED_ASSETS.md](SOURCED_ASSETS.md)
 
-**The making-of film** (the director and the producer disagree about what happened): [CutContent_MakingOf_720p.mp4](CutContent_MakingOf_720p.mp4)
+**Trailer:** https://youtu.be/lHQ2kb2SC44 (59 s, cut from a recording of one whole playthrough; the commentary is the game's own)
 
-**The making-of film:** `devlog/preview/CutContent_MakingOf.mp4` (2 min 41 s: the director and the producer tell it, and disagree)
+**The making-of film:** https://youtu.be/g_Mc4dSeqZY (2 min 41 s: the director and the producer tell it, and disagree)
+
+**The game:** https://dartkis.itch.io/cut-content
 
 ---
 
