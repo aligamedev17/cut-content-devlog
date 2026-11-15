@@ -2,7 +2,7 @@
 
 Every commit of the (private) project repository, in order: local time (Tashkent, UTC+5) and what was done.
 The jam ran from 12 November 05:00 to 16 November 01:59 UTC. Commits before it are tool setup only (declared in the
-submission). 105 commits.
+submission). 107 commits.
 
 
 ## 2026-11-11
@@ -124,3 +124,5 @@ submission). 105 commits.
 - `14:06` First human playthrough, three notes: the hand is cut, the pause card takes the mouse, menus laid out
 - `15:01` The first whole playthrough by a person: five more notes, and a last scene (the premiere)
 - `15:14` The build's self-test asks for the last scene's assets; handoff: the long playtest was stopped at the director's word
+- `15:26` Build Day7d: the eight notes of the first human playthrough, self-test clean; what was and was not run written down
+- `16:37` Second human playthrough: lessons are never dropped, the flat goes away from its pusher, cards are cards; submission steps

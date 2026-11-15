@@ -555,6 +555,34 @@ second. What stands behind it is thinner than behind Day7c, and that was a choic
 the build, not for the long playtest. Nine bot playtests ran on this code and passed; the other twelve and the walk
 through all twenty-three scenes did not run. The check that matters now is the one he is about to do himself.
 
+### The lines that were never said
+
+He played Day7d and wrote: "some voice-overs do not play. Scene 12, where you move the flat: not clear at all, some
+bug. And somebody called SCRIPT has appeared in the subtitles."
+
+Three different things, and the logs of our own bot runs had held all three for days.
+
+- **The commentary track drops lines.** By design: a remark that cannot start within a few seconds has missed its
+  moment, and a newer exchange takes the place of one still waiting, so the talk never lags far behind the play. But
+  the lines that say how a thing works were queued like any remark. Walk into the scene dock, go straight to the
+  flat on castors and push it, and "A flat on castors. Walk behind it. To him it is just the scenery moving" waits
+  behind the scene's three lines of introduction, runs out of time and is thrown away. In the logs kept on this
+  machine that exact line leads the list of lines thrown away for being late. The bots never minded: a bot does
+  not need the flat explained. Lines that explain a mechanic are now lessons and are never dropped, and a scene's
+  introduction no longer times out.
+- **The flat went the wrong way.** It was pushed "away from the nearer end of its rail". Let go of it past the
+  middle and push again, and it turned round and carried the thief back the way he had come, into the view of the
+  man it was hiding him from. The bot always pushed it from one end to the other without stopping. It goes away
+  from whoever pushes it now, and the playtest stops half way and pushes again.
+- **SCRIPT.** The cards between scenes ("CUT TO:  THE SCENE DOCK") were shown in the subtitle box as if someone
+  called SCRIPT had said them, with no voice. They are cards: no name now, set in the slate's amber.
+
+And a check that should have existed from the first day (`tools/check_vo_gaps.py`): of 453 spoken lines, two had no
+voice at all. Both were given to an actor as a property instead of as a line, where the voice generator did not look.
+
+Build Day7e, the fifth print, at 16:46: self-test 0 fails, 44 to 93 frames a second. Eight bot playtests on this code,
+the ones that touch what changed.
+
 ## The blooper reel (things that went wrong)
 
 - **The wet floor sign stood upside down from the day it was modelled.** In the first room of the game. Found by the
